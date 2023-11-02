@@ -3,7 +3,9 @@ import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import Typewriter from 'typewriter-effect';
 
 const Career = () => {
+// carrer section is static  
 
+// office image
   const albumArray=[
     {
       id:1,
@@ -30,7 +32,7 @@ const Career = () => {
       pic:"https://ollyo.com/images/careers/hero3-2x.jpg"
     },
   ]
-
+// for job posting 
 const jobArray=[
   {
     id:1,
