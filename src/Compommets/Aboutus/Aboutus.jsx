@@ -4,7 +4,7 @@ import AOS from 'aos';
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry';
 import { useState } from 'react';
 const Aboutus = () => {
-
+// js package is used here for photo library
   useEffect(() => {
     AOS.init({
       duration: 800, 
@@ -18,6 +18,7 @@ const Aboutus = () => {
   const [data,setData]=useState([])
   console.log(data)
   useEffect(() => {
+    // getting data from database
   
     fetch(`http://localhost:5000/get/teams`)
       .then(res => res.json())
@@ -29,7 +30,10 @@ const Aboutus = () => {
 }, []);
   return (
     <div className='my-5 font-fancy'>
-    <h1 className='mt-10 mb-5 text-3xl text-center font-semibold text-slate-600'><Typewriter
+    <h1 className='mt-10 mb-5 text-3xl text-center font-semibold text-slate-600'>
+      
+      {/* used typwriter animation for text */}
+      <Typewriter
 options={{
   strings: ['OUR', "ESRAQIFY TEAM"],
   autoStart: true,
@@ -50,7 +54,9 @@ options={{
 <p className='text-red-500 font-mono'>{card.expert}</p>
   </div>
   <div className="absolute inset-0 top-52 lg:mr-16 mr-0 flex items-center justify-center flex-col">
-                <p  className={`text-white lg:ml-14 opacity-70   text-3xl font-bold `}>{(card?.name.split(' ')[1])||(card.name) }</p>
+                <p  className={`text-white lg:ml-14 opacity-70   text-3xl font-bold `}>
+                  {/* showing first name of empoloyee */}
+                  {(card?.name.split(' ')[1])||(card.name) }</p>
              
                 <p className='text-white text-lg font-semibold'>{card.designation1}</p>
 
