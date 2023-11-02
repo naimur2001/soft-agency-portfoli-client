@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
+    // footer is static//
     <div className='mt-24 border-t-2 border-slate-400 font-fancy'>
 <h1 className='text-4xl my-5'>Want to talk to us?
 </h1>
@@ -19,6 +20,7 @@ Bangladesh</h1></div>
   <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/></svg></div>
 </div>
 </div>
+{/* admin can log in by clicking esraqify link */}
 <div className='mt-10 font-medium'>© 2018 - 2023 <Link to={'/adminlogin'}>ESRAQIFY</Link>.
 
 Privacy Policy</div>
