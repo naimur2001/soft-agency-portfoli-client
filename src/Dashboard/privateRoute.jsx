@@ -5,6 +5,7 @@ import { AuthContext } from "./AuthProvider";
 
 
 const PrivateRoute = ({children}) => {
+  // to check admin login or out
   const {user,loading}=useContext(AuthContext)
   const location=useLocation()
   if (loading) {

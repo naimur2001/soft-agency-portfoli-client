@@ -31,7 +31,7 @@ const Dashboard = () => {
           <li><Link to={'/dashboard'}>Dashboard Home</Link></li>
           <li><Link to={'/dashboard/servicemanagement'}>Service Management</Link></li>
           <li><Link to={'/dashboard/aboutmanagement'}>About Management</Link></li>
-          <li><Link to={'/dashboard/clientmanagement'}>Client Management</Link></li>
+          {/* <li><Link to={'/dashboard/clientmanagement'}>Client Management</Link></li> */}
            
         </ul>
       </div>
@@ -52,7 +52,7 @@ const Dashboard = () => {
           <li><Link to={'/dashboard'}>Dashboard Home</Link></li>
           <li><Link to={'/dashboard/servicemanagement'}>Service Management</Link></li>
           <li><Link to={'/dashboard/aboutmanagement'}>About Management</Link></li>
-          <li><Link to={'/dashboard/clientmanagement'}>Client Management</Link></li>
+          {/* <li><Link to={'/dashboard/clientmanagement'}>Client Management</Link></li> */}
            
     </ul>
   </div>
