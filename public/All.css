@@ -1,0 +1,66 @@
+.text{
+  background: linear-gradient(to bottom,#d87f7f, #a9b1b0);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.text:hover{
+  background: linear-gradient(to bottom,#96ad40, #cb9f58);
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardAnim{
+  animation: move 2s infinite ease alternate;
+}
+
+@keyframes move {
+  from{
+    transform: translateX(-10px);
+  }
+  to{
+    transform: translateX(0px) scale(1.01);
+  }
+}
+
+.scrollAnim{
+  animation: move 1.5s infinite ease alternate;
+}
+
+@keyframes move {
+  from{
+    transform: translateY(-10px);
+  }
+  to{
+    transform: translateY(0px) scale(1.03);
+  }
+}
+.mapAnim{
+  animation: move 2s infinite ease alternate;
+}
+
+@keyframes move {
+  from{
+    transform: translateY(-10px);
+  }
+  to{
+    transform: translateY(0px) scale(1.03);
+  }
+}
+/* 
+@media screen and (min-width:576px) {
+  .cardAnim{
+    animation: move 3s infinite ease alternate;
+  }
+  
+  @keyframes move {
+    from{
+      transform: translateX(0px);
+    }
+    to{
+      transform: translateX(0px) scale(0);
+    }
+  }
+  
+} */
