@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link, Outlet, useLocation } from 'react-router-dom'
-import PieRechart from './PieRechart';
+
 import BarRechart from './BarRechart';
+import BarRechart2 from './BarRechart2';
 
 
 const Dashboard = () => {
@@ -62,9 +63,9 @@ const Dashboard = () => {
 </div>
 </>
 <Outlet></Outlet>
-<div>
+<div className='grid grid-cols-1 '>
   <BarRechart></BarRechart>
-<PieRechart></PieRechart>
+<BarRechart2></BarRechart2>
 </div>
 
     </div>
