@@ -68,6 +68,7 @@ logOut()
     <div>
   <div className="navbar font-semibold font-rosario">
   <div className="justify-center w-[50%]">
+    {/* this element is for responsive menu */}
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -79,7 +80,9 @@ logOut()
     <Link to={'/'} ><img className='lg:w-28 lg:h-28  w-20 h-20 lg:ml-0 ml-20 ' src="../../public/es.png" alt="" /></Link>
     
    
-  </div>
+  </div>   
+   {/* this element is for web view  */}
+
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
    {navElement}
