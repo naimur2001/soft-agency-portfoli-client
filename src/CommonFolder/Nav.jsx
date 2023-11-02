@@ -66,7 +66,7 @@ logOut()
 
   return (
     <div>
-  <div className="navbar font-semibold font-rosario">
+  <div className="navbar font-semibold font-fancy">
   <div className="justify-center w-[50%]">
     {/* this element is for responsive menu */}
     <div className="dropdown">
