@@ -4,6 +4,7 @@ import Nav from '../CommonFolder/Nav';
 import Footer from '../CommonFolder/Footer';
 const Main = () => {
   const location=useLocation();
+  //client header can not seen in dashboard
   const noHeaderFooter=location.pathname.includes('*' && 'dashboard')
   return (
     <div className=''>
