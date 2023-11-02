@@ -25,7 +25,7 @@ const logOut=()=>{
   setLoading(true);
   return signOut(auth);
 }
-
+// check user logged in or out
 useEffect(()=>{
   const unsubscribe = onAuthStateChanged(auth,loggedUser=>{
     setUser(loggedUser);
