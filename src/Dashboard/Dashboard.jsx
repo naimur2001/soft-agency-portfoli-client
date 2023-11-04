@@ -8,7 +8,7 @@ import BarRechart2 from './BarRechart2';
 const Dashboard = () => {
   const location=useLocation();
   const noHeading = location.pathname.includes('/dashboard/') 
-
+  const noCharts=location.pathname.includes('/dashboard/') 
   return (
     <div className='font-fancy  ' >
 
@@ -63,10 +63,12 @@ const Dashboard = () => {
 </div>
 </>
 <Outlet></Outlet>
-<div className='grid grid-cols-1 '>
+{
+  noCharts || <div className='grid grid-cols-1 '>
   <BarRechart></BarRechart>
 <BarRechart2></BarRechart2>
 </div>
+}
 
     </div>
   )

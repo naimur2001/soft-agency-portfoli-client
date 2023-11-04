@@ -9,7 +9,7 @@ const Career = () => {
   const albumArray=[
     {
       id:1,
-      pic:"https://ollyo.com/images/careers/hero2-2x.jpg"
+      pic:"https://images.pexels.com/photos/3316924/pexels-photo-3316924.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id:2,
@@ -17,20 +17,24 @@ const Career = () => {
     },
     {
       id:3,
-      pic:"https://ollyo.com/images/careers/hero3-2x.jpg"
+      pic:"https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id:4,
-      pic:"https://ollyo.com/images/careers/hero4-2x.jpg"
+      pic:"https://images.pexels.com/photos/3778619/pexels-photo-3778619.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id:5,
-      pic:"https://ollyo.com/images/careers/hero5-2x.jpg"
+      pic:"https://images.pexels.com/photos/17499884/pexels-photo-17499884/free-photo-of-turkish-tea-and-a-laptop-in-an-office.jpeg?auto=compress&cs=tinysrgb&w=600"
     },
     {
       id:6,
-      pic:"https://ollyo.com/images/careers/hero3-2x.jpg"
+      pic:"https://images.unsplash.com/photo-1531973576160-7125cd663d86?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c29mdHdhcmUlMjBjb21wYW55fGVufDB8fDB8fHww"
     },
+    // {
+    //   id:7,
+    //   pic:"https://images.pexels.com/photos/17499884/pexels-photo-17499884/free-photo-of-turkish-tea-and-a-laptop-in-an-office.jpeg?auto=compress&cs=tinysrgb&w=600"
+    // }
   ]
 // for job posting 
 const jobArray=[

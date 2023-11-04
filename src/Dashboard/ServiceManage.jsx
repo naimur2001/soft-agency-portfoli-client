@@ -111,8 +111,8 @@ useEffect(() => {
       <div className=''>
       {
         data?.map(cardData=>
-          <div key={cardData._id}  className={` card my-5  bg-transparent lg:w-[80%] lg:h-[250px] shadow-xl  `}>
-          <figure><img src={cardData.photo_url} className='lg:w-[180px] object-cover lg:h-[350px]' alt="service"/></figure>
+          <div key={cardData._id}  className={` card my-5  bg-gradient-to-r from-red-200 to-purple-200  lg:w-[80%] lg:h-[350px] shadow-xl  `}>
+        <img src={cardData.photo_url} className='w-44 h-28 rounded-2xl' alt="service"/>
           <div className="card-body">
        
             
