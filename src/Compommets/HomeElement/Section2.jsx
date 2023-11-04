@@ -12,7 +12,7 @@ const [data,setData]=useState([])
 
 useEffect(() => {
   
-    fetch(`http://localhost:5000/get/services`)
+    fetch(`https://software-portfolio-tawny.vercel.app/get/services`)
       .then(res => res.json())
       .then(data => setData(data))
       .catch(error => {

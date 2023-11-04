@@ -10,7 +10,7 @@ const [data,setData]=useState('')
 
 useEffect(() => {
   if (user && user.email) {
-    fetch(`http://localhost:5000/user/admin/${user?.email}`)
+    fetch(`https://software-portfolio-tawny.vercel.app/user/admin/${user?.email}`)
       .then(res => res.json())
       .then(data => setData(data))
       .catch(error => {
@@ -77,7 +77,7 @@ logOut()
      {navElement}
       </ul>
     </div>
-    <Link to={'/'} ><img className='lg:w-28 lg:h-28  w-20 h-20 lg:ml-0 ml-20 ' src="../../public/es.png" alt="" /></Link>
+    <Link to={'/'} ><img className='lg:w-28 lg:h-28  w-20 h-20 lg:ml-0 ml-20 ' src="./es.png" alt="" /></Link>
     
    
   </div>   

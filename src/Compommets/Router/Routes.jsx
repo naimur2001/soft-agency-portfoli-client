@@ -73,7 +73,7 @@ const router=createBrowserRouter([
             element:<PrivateRoute>
               <TeamCardEdit></TeamCardEdit>
             </PrivateRoute>,
-          loader:({params})=> fetch(`http://localhost:5000/get/teams/${params.id}`)
+          loader:({params})=> fetch(`https://software-portfolio-tawny.vercel.app/get/teams/${params.id}`)
           }
         ]
       }

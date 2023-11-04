@@ -16,11 +16,11 @@ const Aboutus = () => {
  
 
   const [data,setData]=useState([])
-  console.log(data)
+
   useEffect(() => {
     // getting data from database
   
-    fetch(`http://localhost:5000/get/teams`)
+    fetch(`https://software-portfolio-tawny.vercel.app/get/teams`)
       .then(res => res.json())
       .then(data => setData(data))
       .catch(error => {

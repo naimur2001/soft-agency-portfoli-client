@@ -18,7 +18,7 @@ const handleEdit=(event)=>{
   const photo_url=form.photo_url.value;
   
   const editCardData={name,designation1,designation2,age,expert,photo_url,}
-  fetch(`http://localhost:5000/patch/teams/${_id}`,{
+  fetch(`https://software-portfolio-tawny.vercel.app/patch/teams/${_id}`,{
       method: "PATCH",
       headers: {
         'content-type' : 'application/json'
@@ -43,7 +43,7 @@ const [cardData,setCardData]=useState([])
 
 useEffect(() => {
   
-  fetch(`http://localhost:5000/get/teams/${_id}`)
+  fetch(`https://software-portfolio-tawny.vercel.app/get/teams/${_id}`)
       .then(res => res.json())
       .then(data => setCardData(data))
       .catch(error => {

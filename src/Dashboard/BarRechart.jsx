@@ -5,7 +5,7 @@ const BarRechart = () => {
   const [data,setData]=useState([])
   useEffect(() => {
     
-    fetch(`http://localhost:5000/get/teams`)
+    fetch(`https://software-portfolio-tawny.vercel.app/get/teams`)
       .then(res => res.json())
       .then(data => setData(data))
       .catch(error => {

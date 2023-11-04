@@ -19,7 +19,7 @@ const expert=form.expert.value;
 const photo_url=form.photo_url.value;
 
 const teamCardData={name,designation1,designation2,age,expert,photo_url,}
-fetch(`http://localhost:5000/teams`,{
+fetch(`https://software-portfolio-tawny.vercel.app/teams`,{
   method: "POST",
   headers:{
     'content-type': 'application/json'
@@ -28,7 +28,7 @@ fetch(`http://localhost:5000/teams`,{
 })
 .then(res=>res.json())
 .then(data=>{
-  console.log(data)
+ 
   if (data.insertedId) {
     form.reset()
     setRefresh(!refresh);
@@ -57,7 +57,7 @@ const handleDelete=(id)=>{
     confirmButtonText: 'Yes, delete it!'
     }).then(result=>{
       if (result.isConfirmed) {
-        fetch(`http://localhost:5000/delete/teams/${id}`,{
+        fetch(`https://software-portfolio-tawny.vercel.app/delete/teams/${id}`,{
           method: "DELETE",
 
         })
@@ -82,7 +82,7 @@ const [data,setData]=useState([])
 
 useEffect(() => {
   
-    fetch(`http://localhost:5000/get/teams`)
+    fetch(`https://software-portfolio-tawny.vercel.app/get/teams`)
       .then(res => res.json())
       .then(data => setData(data))
       .catch(error => {
