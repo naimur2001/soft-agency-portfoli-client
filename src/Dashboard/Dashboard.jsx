@@ -3,6 +3,7 @@ import { Link, Outlet, useLocation } from 'react-router-dom'
 
 import BarRechart from './BarRechart';
 import BarRechart2 from './BarRechart2';
+import Stats from './Stats';
 
 
 const Dashboard = () => {
@@ -64,10 +65,19 @@ const Dashboard = () => {
 </>
 <Outlet></Outlet>
 {
-  noCharts || <div className='grid grid-cols-1 '>
-  <BarRechart></BarRechart>
+  noCharts || <div>
+   <div className=' w-[100%] '> <Stats></Stats></div>
+    <div className='grid grid-cols-2 w-[100%] '>
+ <div className='w-[50%]'>
+  <h1 className='text-center font-semibold'>Team Chart</h1>
+ <BarRechart></BarRechart>
+ </div>
+ <div className='w-[50%]'>
+ {/* <h1 className='text-center font-semibold'>Service</h1> */}
 <BarRechart2></BarRechart2>
+ </div>
 </div>
+  </div>
 }
 
     </div>

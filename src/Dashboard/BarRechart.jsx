@@ -15,9 +15,9 @@ const BarRechart = () => {
 }, []);
   return (
     <div>
-       <BarChart width={730} height={250} data={data}>
+       <BarChart width={500} height={250} data={data}>
         <CartesianGrid strokeDasharray="3 3" />
-        <XAxis dataKey="" />
+        <XAxis dataKey="name" />
         <YAxis dataKey='age' />
         <Tooltip 
           formatter={(value, name, props) => [`${value} years old`, `Designation 1: ${props.payload.designation1}`, ]}
