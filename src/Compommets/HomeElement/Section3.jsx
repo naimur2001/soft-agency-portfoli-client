@@ -9,7 +9,7 @@ const Section3 = () => {
     },
     {
         "name": "Google",
-        "image_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/1200px-Google_%22G%22_Logo.svg.png",
+        "image_url": "https://www.freepnglogos.com/uploads/google-logo-png/google-logo-png-webinar-optimizing-for-success-google-business-webinar-13.png",
     },
     {
         "name": "Microsoft",
